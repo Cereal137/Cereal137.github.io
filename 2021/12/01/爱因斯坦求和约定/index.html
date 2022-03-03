@@ -87,7 +87,7 @@
 <meta property="og:description" content="The Summation Convention爱因斯坦求和约定​        $\boldsymbol{u}&#x3D;\sum_{i&#x3D;1}^n u_i\boldsymbol{g}^i&#x3D;u_i\boldsymbol{g}^i$ 爱因斯坦求和约定将 $i$ 同时出现在上标和下标时的情况约定为对 $i$ 进行求和，极大地简化了求和的和式。 内积​    $\boldsymbol{u}&#x3D;\sum_{i&#x3D;1}^">
 <meta property="og:locale">
 <meta property="article:published_time" content="2021-12-01T11:45:43.000Z">
-<meta property="article:modified_time" content="2021-12-01T15:40:56.564Z">
+<meta property="article:modified_time" content="2021-12-03T11:11:00.077Z">
 <meta property="article:author" content="Cereal4Dinner">
 <meta name="twitter:card" content="summary">
 
@@ -319,16 +319,16 @@
 <p>代入$\boldsymbol{u}=u_i\boldsymbol{g}^i，\boldsymbol{v}=v_j\boldsymbol{g}^j$ 后，</p>
 <p>​    $\boldsymbol{u}\times\boldsymbol{v}=(\boldsymbol{u}\times\boldsymbol{v})_k\boldsymbol{g}^k=u_iv_j(\boldsymbol{g}^i\times\boldsymbol{g}^j)\cdot\boldsymbol{g}^k$ </p>
 <p>定义Jacobian行列式为$(\boldsymbol{g}^1\times\boldsymbol{g}^2)\cdot\boldsymbol{g}^3=J$</p>
-<p>和Levi-Civita符号$\epsilon_{ijk}=(-1)^{\tau(ijk)}$</p>
-<p>可以发现$J\cdot\epsilon_{ijk}=(\boldsymbol{g}^i \times\boldsymbol{g}^j)\cdot\boldsymbol{g}^k$</p>
-<p>于是$(\boldsymbol{u}\times\boldsymbol{v})<em>k=u_iv_jJ\epsilon</em>{ijk}$ ，可以得到由此三维矢量的外积公式。</p>
+<p>和Levi-Civita符号$\epsilon_{ijk}=J(-1)^{\tau(ijk)}$</p>
+<p>可以发现$\epsilon_{ijk}=(\boldsymbol{g}^i \times\boldsymbol{g}^j)\cdot\boldsymbol{g}^k$</p>
+<p>于是$(\boldsymbol{u}\times\boldsymbol{v})<em>k=u_iv_j\epsilon</em>{ijk}$ ，可以得到由此三维矢量的外积公式。</p>
 <h3 id="三重积"><a href="#三重积" class="headerlink" title="三重积"></a>三重积</h3><p>三维情形下的Levi-Civita符号有如下关系：</p>
 <p>​    $\epsilon_{pqr}\epsilon^{ijk}=\begin{vmatrix}\delta_p^i&amp;\delta_q^i&amp;\delta_r^i\\ \delta_p^j&amp;\delta_q^j&amp;\delta_r^j\\ \delta_p^k&amp;\delta_q^k&amp;\delta_r^k\end{vmatrix}$</p>
 <p>当取定 $r=k$ 时，上式变为$\epsilon_{pqk}\epsilon^{ijk}=\delta_p^i\delta_q^j-\delta_p^j\delta_q^i$</p>
 <p>对于三重积 $(\boldsymbol{u}\times\boldsymbol{v})\times\boldsymbol{w}=\boldsymbol{v}(\boldsymbol{u}\cdot\boldsymbol{w})-\boldsymbol{u}(\boldsymbol{v}\cdot\boldsymbol{w})$ ，只需要求解在上指标或者下指标下的坐标就可以证明。</p>
 <p>为此，先计算$(\boldsymbol{u}\times\boldsymbol{v})^{k}$，再计算$((\boldsymbol{u}\times\boldsymbol{v})\times\boldsymbol{w})_p$ 令 $r=k$ 就能得出结论了。</p>
 <p>​    $(\boldsymbol{u}\times\boldsymbol{v})^{k}=(\boldsymbol{u}\times\boldsymbol{v})\cdot\boldsymbol{g}^k=u_iv_j\epsilon^{ijk}$</p>
-<p>​    $\begin{align}((\boldsymbol{u}\times\boldsymbol{v})\times\boldsymbol{w})<em>p&amp;=((\boldsymbol{u}\times\boldsymbol{v})\times\boldsymbol{w})\cdot \boldsymbol{g}_p\&amp;=(\boldsymbol{u}\times\boldsymbol{v})^rw^q\cdot(\boldsymbol{g}_r\times\boldsymbol{g}_q)\cdot\boldsymbol{g}_p\&amp;=(\boldsymbol{u}\times\boldsymbol{v})^rw^q\cdot\epsilon</em>{rqp}\&amp;=u_iv_j\epsilon^{ijk}w^q\epsilon_{kqp}-u_iv_j\epsilon^{ijk}w^q\epsilon_{pqk}\&amp;=-u_iv_jw^q(\delta_p^i\delta_q^j-\delta_q^i\delta_p^j)\&amp;=u_iv_jw^q\delta_q^i\delta_p^j-u_iv_jw^q\delta_p^i\delta_q^j\&amp;=u_iw^iv_p-u_pv_iw^i\end{align}$</p>
+<p>​    $\begin{aligned}((\boldsymbol{u}\times\boldsymbol{v})\times\boldsymbol{w})<em>p&amp;=((\boldsymbol{u}\times\boldsymbol{v})\times\boldsymbol{w})\cdot \boldsymbol{g}_p\&amp;=(\boldsymbol{u}\times\boldsymbol{v})^rw^q\cdot(\boldsymbol{g}_r\times\boldsymbol{g}_q)\cdot\boldsymbol{g}_p\&amp;=(\boldsymbol{u}\times\boldsymbol{v})^rw^q\cdot\epsilon</em>{rqp}\&amp;=u_iv_j\epsilon^{ijk}w^q\epsilon_{kqp}-u_iv_j\epsilon^{ijk}w^q\epsilon_{pqk}\&amp;=-u_iv_jw^q(\delta_p^i\delta_q^j-\delta_q^i\delta_p^j)\&amp;=u_iv_jw^q\delta_q^i\delta_p^j-u_iv_jw^q\delta_p^i\delta_q^j\&amp;=u_iw^iv_p-u_pv_iw^i\end{aligned}$</p>
 <p>这样我们就得到了$(\boldsymbol{u}\times\boldsymbol{v})\times\boldsymbol{w}=\boldsymbol{v}(\boldsymbol{u}\cdot\boldsymbol{w})-\boldsymbol{u}(\boldsymbol{v}\cdot\boldsymbol{w})$</p>
 
       
@@ -443,7 +443,7 @@
               
                 <a href="/archives/%20%7C%7C%20archive">
               
-                  <span class="site-state-item-count">6</span>
+                  <span class="site-state-item-count">7</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -500,7 +500,7 @@
 
     <footer id="footer" class="footer">
       <div class="footer-inner">
-        <div class="copyright">&copy; <span itemprop="copyrightYear">2021</span>
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2022</span>
   <span class="with-love">
     <i class="fa fa-user"></i>
   </span>

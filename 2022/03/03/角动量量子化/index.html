@@ -79,15 +79,15 @@
 
 
 
-<meta name="description" content="角动量量子化先从数理方法的基础开始 勒让德方程：$(1-x^2)y’’-2xy’+l(l+1)y&#x3D;0$在$x&#x3D;0$邻域上解l阶勒让德方程： 设$y(x)&#x3D;\sum_{k&#x3D;0}^{+\infin}a_kx^k$ 则有$y’(x)&#x3D;\sum_{k&#x3D;0}^{+\infin}(k+1)a_{k+1}x^k$，以及$y’’(x)&#x3D;\sum_{k&#x3D;0}^{+\infin}(k+2)(k+1)a_{k+2}x^">
+<meta name="description" content="角动量量子化先从数理方法的基础开始 勒让德方程：$(1-x^2)y’’-2xy’+l(l+1)y&#x3D;0$在$x&#x3D;0$邻域上解l阶勒让德方程： 设$y(x)&#x3D;\sum_{k&#x3D;0}^{+\infty}a_kx^k$ 则有$y’(x)&#x3D;\sum_{k&#x3D;0}^{+\infty}(k+1)a_{k+1}x^k$，以及$y’’(x)&#x3D;\sum_{k&#x3D;0}^{+\infty}(k+2)(k+1)a_{k+2}x^">
 <meta property="og:type" content="article">
 <meta property="og:title" content="角动量量子化">
 <meta property="og:url" content="http://example.com/2022/03/03/%E8%A7%92%E5%8A%A8%E9%87%8F%E9%87%8F%E5%AD%90%E5%8C%96/index.html">
 <meta property="og:site_name" content="Cereal4Dinner的个人主页">
-<meta property="og:description" content="角动量量子化先从数理方法的基础开始 勒让德方程：$(1-x^2)y’’-2xy’+l(l+1)y&#x3D;0$在$x&#x3D;0$邻域上解l阶勒让德方程： 设$y(x)&#x3D;\sum_{k&#x3D;0}^{+\infin}a_kx^k$ 则有$y’(x)&#x3D;\sum_{k&#x3D;0}^{+\infin}(k+1)a_{k+1}x^k$，以及$y’’(x)&#x3D;\sum_{k&#x3D;0}^{+\infin}(k+2)(k+1)a_{k+2}x^">
+<meta property="og:description" content="角动量量子化先从数理方法的基础开始 勒让德方程：$(1-x^2)y’’-2xy’+l(l+1)y&#x3D;0$在$x&#x3D;0$邻域上解l阶勒让德方程： 设$y(x)&#x3D;\sum_{k&#x3D;0}^{+\infty}a_kx^k$ 则有$y’(x)&#x3D;\sum_{k&#x3D;0}^{+\infty}(k+1)a_{k+1}x^k$，以及$y’’(x)&#x3D;\sum_{k&#x3D;0}^{+\infty}(k+2)(k+1)a_{k+2}x^">
 <meta property="og:locale">
 <meta property="article:published_time" content="2022-03-03T11:32:46.000Z">
-<meta property="article:modified_time" content="2022-03-03T11:39:21.834Z">
+<meta property="article:modified_time" content="2022-03-03T11:42:26.401Z">
 <meta property="article:author" content="Cereal4Dinner">
 <meta name="twitter:card" content="summary">
 
@@ -301,10 +301,10 @@
       
         <h1 id="角动量量子化"><a href="#角动量量子化" class="headerlink" title="角动量量子化"></a>角动量量子化</h1><p>先从数理方法的基础开始</p>
 <h3 id="勒让德方程：-1-x-2-y’’-2xy’-l-l-1-y-0"><a href="#勒让德方程：-1-x-2-y’’-2xy’-l-l-1-y-0" class="headerlink" title="勒让德方程：$(1-x^2)y’’-2xy’+l(l+1)y=0$"></a>勒让德方程：$(1-x^2)y’’-2xy’+l(l+1)y=0$</h3><p>在$x=0$邻域上解l阶勒让德方程：</p>
-<p>设$y(x)=\sum_{k=0}^{+\infin}a_kx^k$</p>
-<p>则有$y’(x)=\sum_{k=0}^{+\infin}(k+1)a_{k+1}x^k$，以及$y’’(x)=\sum_{k=0}^{+\infin}(k+2)(k+1)a_{k+2}x^k$</p>
+<p>设$y(x)=\sum_{k=0}^{+\infty}a_kx^k$</p>
+<p>则有$y’(x)=\sum_{k=0}^{+\infty}(k+1)a_{k+1}x^k$，以及$y’’(x)=\sum_{k=0}^{+\infty}(k+2)(k+1)a_{k+2}x^k$</p>
 <p>代入方程得到了：</p>
-<p>$(1-x^2)\sum_{k=0}^{+\infty}(k+2)(k+1)a_{k+2}x^k-2x\sum_{k=0}^{+\infin}(k+1)a_{k+1}x^k+l(l+1)\sum_{k=0}^{+\infin}a_kx^k=0$</p>
+<p>$(1-x^2)\sum_{k=0}^{+\infty}(k+2)(k+1)a_{k+2}x^k-2x\sum_{k=0}^{+\infty}(k+1)a_{k+1}x^k+l(l+1)\sum_{k=0}^{+\infty}a_kx^k=0$</p>
 <p>关注$x^k$的系数应该为0:</p>
 <p>$(k+1)(k+2)a_{k+2}-k(k-1)a_k-2ka_k+l(l+1)a_k=0$</p>
 <p>于是：$a_{k+2}=\frac{k(k+1)-l(l+1)}{(k+1)(k+2)}a_k$</p>
@@ -313,9 +313,9 @@
 <p>$\Theta’(x)=(1-x^2)^{\frac{m}{2}}y’-mx(1-x^2)^{\frac{m}{2}-1}y$</p>
 <p>$\Theta’’(x)=(1-x^2)^{\frac{m}{2}}y’’-2mx(1-x^2)^{\frac{m}{2}-1}y’-m(1-x^2)^{\frac{m}{2}-1}y+m(m-2)x^2(1-x^2)^{\frac{m}{2}-2}y$</p>
 <p>代入方程得到了：</p>
-<p>$(1-x^2)y’’-2(m+1)xy’+(\lambda-m(m+1))y=0$</p>
+<p>$(1-x^2)y’’-2(m+1)xy’+[\lambda-m(m+1)]y=0$</p>
 <p>再次使用级数法代入方程：</p>
-<p>$(1-x^2)\sum_{k=0}^{+\infin}(k+2)(k+1)a_{k+2}x^k-2(m+1)x\sum_{k=0}^{+\infin}(k+1)a_{k+1}x^k+(\lambda-m(m+1))a_k=0$</p>
+<p>$(1-x^2)\sum_{k=0}^{+\infty}(k+2)(k+1)a_{k+2}x^k-2(m+1)x\sum_{k=0}^{+\infty}(k+1)a_{k+1}x^k+[\lambda-m(m+1)]a_k=0$</p>
 <p>同样地也可以得到递推关系：$a_{k+2}=\frac{k(k-1)+2k(m+1)+m(m+1)-\lambda}{(k+1)(k+2)}a_k$</p>
 <p>但是这里就非常头疼了，分母为0的条件转化为$\lambda=k(k-1)+2k(m+1)+m(m+1)$</p>
 <p>似乎不太好确定$\lambda$的取值，所以先做一些尝试，因为k在这里是任意的自然数，所以代入k的值。</p>
@@ -326,15 +326,15 @@
 <p>$\lambda=(k+m+1)(k+m)$，确实如此。</p>
 <h3 id="氢原子模型"><a href="#氢原子模型" class="headerlink" title="氢原子模型"></a>氢原子模型</h3><p>氢原子所处的库伦势能为$V=-\frac{Ze^2}{4\pi\epsilon_0 r}$</p>
 <p>列出薛定谔方程：$E\psi=V\psi-\frac{\hbar}{2m}\nabla^2\psi$</p>
-<p>在球坐标下$\nabla^2=\frac{1}{r^2}\frac{\part}{\part r}(r^2\frac{\part}{\part r})+\frac{1}{r^2\sin\theta}\frac{\part}{\part{\theta}}(\sin\theta\frac{\part}{\part\theta})+\frac{1}{r^2\sin^2\theta}\frac{\part^2}{\part\phi^2}$</p>
+<p>在球坐标下$\nabla^2=\frac{1}{r^2}\frac{\partial}{\partial r}(r^2\frac{\partial}{\partial r})+\frac{1}{r^2\sin\theta}\frac{\partial}{\partial{\theta}}(\sin\theta\frac{\partial}{\partial\theta})+\frac{1}{r^2\sin^2\theta}\frac{\partial^2}{\partial\phi^2}$</p>
 <p>代入之后得到了：</p>
-<p>$\frac{1}{r^2}\frac{\part}{\part r}(r^2\frac{\part\psi}{\part r})+\frac{1}{r^2\sin\theta}\frac{\part}{\part{\theta}}(\sin\theta\frac{\part\psi}{\part\theta})+\frac{1}{r^2\sin^2\theta}\frac{\part^2\psi}{\part\phi^2}+\frac{2m}{\hbar^2}(E+\frac{Ze^2}{4\pi\epsilon_0r})\psi=0$</p>
+<p>$\frac{1}{r^2}\frac{\partial}{\partial r}(r^2\frac{\partial\psi}{\partial r})+\frac{1}{r^2\sin\theta}\frac{\partial}{\partial{\theta}}(\sin\theta\frac{\partial\psi}{\partial\theta})+\frac{1}{r^2\sin^2\theta}\frac{\partial^2\psi}{\partial\phi^2}+\frac{2m}{\hbar^2}(E+\frac{Ze^2}{4\pi\epsilon_0r})\psi=0$</p>
 <p>这里还是太复杂了，我们试图把$\psi$简化，写成这样的形式：$\psi=R(r)\cdot Y(\theta,\phi)$</p>
-<p>$\frac{Y}{r^2}\frac{\part}{\part r}(r^2\frac{\part R}{\part r})+\frac{R}{r^2\sin\theta}\frac{\part}{\part{\theta}}(\sin\theta\frac{\part Y}{\part\theta})+\frac{R}{r^2\sin^2\theta}\frac{\part^2Y}{\part\phi^2}+\frac{2m}{\hbar^2}(E+\frac{Ze^2}{4\pi\epsilon_0r})RY=0$</p>
-<p>$\frac{1}{R}\frac{\part}{\part r}(r^2\frac{\part R}{\part r})+\frac{1}{Y\sin\theta}\frac{\part}{\part{\theta}}(\sin\theta\frac{\part Y}{\part\theta})+\frac{1}{Y\sin^2\theta}\frac{\part^2Y}{\part\phi^2}+\frac{2mr^2}{\hbar^2}(E+\frac{Ze^2}{4\pi\epsilon_0r})=0$</p>
+<p>$\frac{Y}{r^2}\frac{\partial}{\partial r}(r^2\frac{\partial R}{\partial r})+\frac{R}{r^2\sin\theta}\frac{\partial}{\partial{\theta}}(\sin\theta\frac{\partial Y}{\partial\theta})+\frac{R}{r^2\sin^2\theta}\frac{\partial^2Y}{\partial\phi^2}+\frac{2m}{\hbar^2}(E+\frac{Ze^2}{4\pi\epsilon_0r})RY=0$</p>
+<p>$\frac{1}{R}\frac{\partial}{\partial r}(r^2\frac{\partial R}{\partial r})+\frac{1}{Y\sin\theta}\frac{\partial}{\partial{\theta}}(\sin\theta\frac{\partial Y}{\partial\theta})+\frac{1}{Y\sin^2\theta}\frac{\partial^2Y}{\partial\phi^2}+\frac{2mr^2}{\hbar^2}(E+\frac{Ze^2}{4\pi\epsilon_0r})=0$</p>
 <p>移项后得到了：</p>
-<p>$\frac{1}{R}\frac{\part}{\part r}(r^2\frac{\part R}{\part r})+\frac{2mr^2}{\hbar^2}(E+\frac{Ze^2}{4\pi\epsilon_0r})=-\frac{1}{Y\sin\theta}\frac{\part}{\part{\theta}}(\sin\theta\frac{\part Y}{\part\theta})-\frac{1}{Y\sin^2\theta}\frac{\part^2Y}{\part\phi^2}$</p>
-<p>注意到LHS只和r有关，而RHS只与$\theta,\phi$有关，所以令$\frac{1}{R}\frac{\part}{\part r}(r^2\frac{\part R}{\part r})+\frac{2mr^2}{\hbar^2}(E+\frac{Ze^2}{4\pi\epsilon_0r})=-\frac{1}{Y\sin\theta}\frac{\part}{\part{\theta}}(\sin\theta\frac{\part Y}{\part\theta})-\frac{1}{Y\sin^2\theta}\frac{\part^2Y}{\part\phi^2}=\lambda$</p>
+<p>$\frac{1}{R}\frac{\partial}{\partial r}(r^2\frac{\partial R}{\partial r})+\frac{2mr^2}{\hbar^2}(E+\frac{Ze^2}{4\pi\epsilon_0r})=-\frac{1}{Y\sin\theta}\frac{\partial}{\partial{\theta}}(\sin\theta\frac{\partial Y}{\partial\theta})-\frac{1}{Y\sin^2\theta}\frac{\partial^2Y}{\partial\phi^2}$</p>
+<p>注意到LHS只和r有关，而RHS只与$\theta,\phi$有关，所以令$\frac{1}{R}\frac{\partial}{\partial r}(r^2\frac{\partial R}{\partial r})+\frac{2mr^2}{\hbar^2}(E+\frac{Ze^2}{4\pi\epsilon_0r})=-\frac{1}{Y\sin\theta}\frac{\partial}{\partial{\theta}}(\sin\theta\frac{\partial Y}{\partial\theta})-\frac{1}{Y\sin^2\theta}\frac{\partial^2Y}{\partial\phi^2}=\lambda$</p>
 <p>把目光聚焦到第二个等号上，再把复杂的式子做一个分离，令$Y(\theta,\phi)=\Theta(\theta)\cdot\Phi(\phi)$</p>
 <p>得到了：$\frac{\sin\theta}{\Theta}\frac{d}{d\theta}(\sin\theta\frac{d\Theta}{d\theta})+\lambda\sin^2\theta=-\frac{d^2\Phi}{\Phi d\phi^2}=\nu$</p>
 <p>此时，第二个等号就很好解决了：$\Phi(\phi)=Ae^{i\sqrt{\nu}\phi}+Be^{-i\sqrt{\nu}\phi}$</p>
@@ -347,19 +347,19 @@
 <p>这就来到了一开始解决的勒让德连带函数问题。</p>
 <p>所以我们有结论$\lambda=l(l+1)$</p>
 <h3 id="角动量量子化-L-sqrt-l-l-1-hbar"><a href="#角动量量子化-L-sqrt-l-l-1-hbar" class="headerlink" title="角动量量子化$L=\sqrt{l(l+1)}\hbar$"></a>角动量量子化$L=\sqrt{l(l+1)}\hbar$</h3><p>在直角坐标下角动量的各个分量很好表示：</p>
-<p>$L_x=yp_z-zp_y=-i\hbar(y\frac{\part}{\part z}-z\frac{\part}{\part y})$</p>
-<p>$L_y=zp_x-xp_z=-i\hbar(z\frac{\part}{\part x}-x\frac{\part}{\part z})$</p>
-<p>$L_z=xp_y-yp_x=-i\hbar(x\frac{\part}{\part y}-y\frac{\part}{\part x})$</p>
-<p>利用链式法则$\frac{\part}{\part r}=\frac{\part x}{\part r}\frac{\part}{\part x}+\frac{\part y}{\part r}\frac{\part}{\part y}+\frac{\part z}{\part r}\frac{\part}{\part z}$我们很容易写出逆变换</p>
+<p>$L_x=yp_z-zp_y=-i\hbar(y\frac{\partial}{\partial z}-z\frac{\partial}{\partial y})$</p>
+<p>$L_y=zp_x-xp_z=-i\hbar(z\frac{\partial}{\partial x}-x\frac{\partial}{\partial z})$</p>
+<p>$L_z=xp_y-yp_x=-i\hbar(x\frac{\partial}{\partial y}-y\frac{\partial}{\partial x})$</p>
+<p>利用链式法则$\frac{\partial}{\partial r}=\frac{\partial x}{\partial r}\frac{\partial}{\partial x}+\frac{\partial y}{\partial r}\frac{\partial}{\partial y}+\frac{\partial z}{\partial r}\frac{\partial}{\partial z}$我们很容易写出逆变换</p>
 <p>于是得到了：</p>
 <p>$L_x=i\hbar()$</p>
 <p>$L_y=i\hbar()$</p>
-<p>$L_z=i\hbar\frac{\part^2}{\part\phi^2}$</p>
+<p>$L_z=i\hbar\frac{\partial^2}{\partial\phi^2}$</p>
 <p>所以我们得到了角动量的算符：</p>
-<p>$L^2=-\hbar^2(\frac{1}{\sin\theta}\frac{\part}{\part \theta}(\sin\theta\frac{\part}{\part\theta})+\frac{1}{\sin^2\theta}\frac{\part^2}{\part\phi^2})$</p>
+<p>$L^2=-\hbar^2[\frac{1}{\sin\theta}\frac{\partial}{\partial \theta}(\sin\theta\frac{\partial}{\partial\theta})+\frac{1}{\sin^2\theta}\frac{\partial^2}{\partial\phi^2}]$</p>
 <p>回顾下前面的方程</p>
-<p>$-(\frac{1}{Y\sin\theta}\frac{\part}{\part{\theta}}(\sin\theta\frac{\part Y}{\part\theta})+\frac{1}{Y\sin^2\theta}\frac{\part^2Y}{\part\phi^2})=\lambda$</p>
-<p>$-\hbar^2(\frac{1}{\sin\theta}\frac{\part}{\part{\theta}}(\sin\theta\frac{\part Y}{\part\theta})+\frac{1}{\sin^2\theta}\frac{\part^2Y}{\part\phi^2})=\lambda\hbar^2 Y$</p>
+<p>$-[\frac{1}{Y\sin\theta}\frac{\partial}{\partial{\theta}}(\sin\theta\frac{\partial Y}{\partial\theta})+\frac{1}{Y\sin^2\theta}\frac{\partial^2Y}{\partial\phi^2}]=\lambda$</p>
+<p>$-\hbar^2[\frac{1}{\sin\theta}\frac{\partial}{\partial{\theta}}(\sin\theta\frac{\partial Y}{\partial\theta})+\frac{1}{\sin^2\theta}\frac{\partial^2Y}{\partial\phi^2}]=\lambda\hbar^2 Y$</p>
 <p>所以得到了：$L^2Y=\lambda\hbar^2Y$，所以角动量的本征值即为$L^2=\lambda\hbar^2$</p>
 <p>即$L=\sqrt{l(l+1)}\hbar$</p>
 

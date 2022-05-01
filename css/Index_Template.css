@@ -15,7 +15,7 @@ body {
 	width: 90%;
 	margin-left: auto;
 	margin-right: auto;
-	height: 440px;
+	height: 500px;
 	background-color: #092206;
 }
 /* Navigation */
@@ -93,7 +93,7 @@ ul li:hover a {
 }
 /* About Section */
 .text_column {
-	width: 90%;
+	width: 29%;
 	text-align: justify;
 	font-weight: lighter;
 	line-height: 25px;
@@ -151,8 +151,8 @@ ul li:hover a {
 /* Parallax Section */
 .banner {
 	background-color: #2D9AB7;
-	background-image: url("Images/Ducks202204.jpg");
-	height: 400px;
+	background-image: url("https://cereal137.github.io/Images/Ducks202204.jpg");
+	height: 100%;
 	background-attachment: fixed;
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -190,6 +190,13 @@ footer {
 	padding-top: 30px;
 	float: left;
 }
+footer article a {
+    color: #77D55A;
+	text-decoration: none;
+}
+footer article:hover a {
+    color:#F03135;
+}
 footer .footer_column h3 {
 	color: #B3B3B3;
 	text-align: center;
@@ -219,9 +226,9 @@ footer .footer_column p {
 	margin-right: auto;
 	margin-bottom: auto;
 	margin-left: auto;
-	padding-top: 5px;
+	padding-top: 25px;
 	padding-right: 10px;
-	padding-bottom: 5px;
+	padding-bottom: 25px;
 	padding-left: 10px;
 	text-align: center;
 	vertical-align: middle;
@@ -237,6 +244,13 @@ footer .footer_column p {
 	background-color: #FEFEFE;
 	color: #C4C4C4;
 	cursor: pointer;
+}
+.button a {
+    color: #FFFFFF;
+	text-decoration: none;
+}
+.button:hover a {
+    color:aquamarine;
 }
 .copyright {
 	text-align: center;

@@ -152,7 +152,7 @@ ul li:hover a {
 .banner {
 	background-color: #2D9AB7;
 	background-image: url("https://cereal137.github.io/Images/Ducks202204.jpg");
-	height: 110%;
+	height: 100%;
 	background-attachment: fixed;
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -279,7 +279,7 @@ footer {
 }
 
 /* Mobile */
-@media (max-width: 320px) {
+@media (max-width : 490px ){
 .logo {
 	width: 100%;
 	text-align: center;
@@ -287,6 +287,8 @@ footer {
 	margin-right: 0px;
 	margin-bottom: 0px;
 	margin-left: 0px;
+    color:#FFFFFF;
+    font-weight: bold;
 }
 .container header nav {
 	margin-top: 0px;
@@ -294,17 +296,19 @@ footer {
 	margin-bottom: 0px;
 	margin-left: 0px;
 	width: 100%;
-	float: none;
-	display: none;
+	float: left;
 }
 header nav ul {
+    float:inherit;
+    width:90%;
+    padding-left:0px;
 }
 nav ul li {
 	margin-top: 0px;
 	margin-right: 0px;
 	margin-bottom: 0px;
 	margin-left: 0px;
-	width: 100%;
+	width: 111%;
 	text-align: center;
 }
 .text_column {
@@ -351,7 +355,11 @@ nav ul li {
 }
 .banner {
 	background-color: #2D9AB7;
-	background-image: none;
+	background-image: url("https://cereal137.github.io/Images/Ducks202204.jpg");
+	height: 100%;
+	background-attachment: fixed;
+	background-size: cover;
+	background-repeat: no-repeat;
 }
 .tagline {
 	margin-top: 20px;
@@ -366,7 +374,7 @@ nav ul li {
 }
 
 /* Small Tablets */
-@media (min-width: 321px)and (max-width: 767px) {
+@media ( min-width : 517px ) and (max-width : 529px ){
 .logo {
 	width: 100%;
 	text-align: center;
@@ -374,7 +382,8 @@ nav ul li {
 	margin-right: 0px;
 	margin-bottom: 0px;
 	margin-left: 0px;
-	color: #043745;
+	color: #FFFFFF;
+    font-size:700;
 }
 .container header nav {
 	margin-top: 0px;
@@ -382,21 +391,22 @@ nav ul li {
 	margin-bottom: 0px;
 	margin-left: 0px;
 	width: 100%;
-	float: none;
+	float: left;
 	overflow: auto;
 	display: inline-block;
 	background: #41E84E;
 }
 header nav ul {
 	padding: 0px;
-	float: none;
+	float: inherit;
+    width:90%;
 }
 nav ul li {
 	margin-top: 0px;
 	margin-right: 0px;
 	margin-bottom: 0px;
 	margin-left: 0px;
-	width: 100%;
+	width: 111%;
 	text-align: center;
 	padding-top: 8px;
 	padding-bottom: 8px;
@@ -473,7 +483,22 @@ nav ul li {
 }
 
 /* Small Desktops */
-@media (min-width: 768px) and (max-width: 1096px) {
+@media ( min-width : 768px ) and (max-width : 869px ){
+header nav ul{
+    margin-top:3%;
+    float:right;
+    width:80%
+}
+nav ul li {
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	width: 33%;
+	text-align: center;
+	padding-top: 0px;
+	padding-bottom: 0px;
+}
 .text_column {
 	width: 100%;
 }

@@ -126,7 +126,7 @@ ul li:hover a {
 .menubar {
     color:#FFFFFF;
     font-weight: 700;
-    background-color: #54D9F6;
+    background-color: #6BF682;
     width:16%;
     padding-left:3%;
     padding_right:3%;
@@ -135,7 +135,7 @@ ul li:hover a {
     line-height: 300%;
     padding-top:3%;
     padding-bottom: 3%;
-    height:1400px;
+    height:1500px;
 }
 .menubar ul {
     list-style: none;
@@ -149,7 +149,7 @@ ul li:hover a {
     padding-left:0%;
     float:left;
     text-align: center;
-    height:1400px;
+    height:1500px;
     padding-top: 3%;
     padding-bottom: 3%;
     line-height: 300%;

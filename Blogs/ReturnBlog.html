@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://cereal137.github.io/css/github-markdown-light.css">
+    <style>
+      .markdown-body {
+        box-sizing: border-box;
+        min-width: 200px;
+        max-width: 980px;
+        margin: 0 auto;
+        padding: 45px;
+      }
+    
+      @media (max-width: 767px) {
+        .markdown-body {
+          padding: 15px;
+        }
+      }
+    </style>
+    <script>
+        MathJax = {
+          tex: {
+            inlineMath: [['$', '$'], ['\\(', '\\)']]
+          },
+          svg: {
+            fontCache: 'global'
+          }
+        };
+        </script>
+        <script type="text/javascript" id="MathJax-script" async
+          src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+        </script>
+    </head>
+<body>
+<article class="markdown-body">
+<header id="title-block-header">
+<h1 class="title">回归</h1>
+<p class="date">2021-11-27 16:12:21</p>
+</header>
+<p>找了一周bug还是没有发现，无奈重开 ### 一道高数题</p>
+<p><span class="math display">\[
+已知f(x)=0在区间[a,b]上有n个根(可以是重根)\ 求证：f^{(n-1)}(x)=0\
+在[a,b]上至少有1个根
+\]</span></p>
+<h5 id="引理">引理：</h5>
+<p>​ 设<span class="math inline">\(x_0\)</span>是<span
+class="math inline">\(f(x)=0\)</span>的<span
+class="math inline">\(k\)</span>重根，则<span
+class="math inline">\(f^{(i)}(x_0)=0\  (i=0,1,...,k-1)\)</span></p>
+<h5 id="证明">证明：</h5>
+<p>可设<span
+class="math inline">\(f(x)=(x-x_0)^k*g(x)\)</span>,由莱布尼茨公式得，<span
+class="math inline">\(f^{(k-1)}(x)=\Sigma_{i=0}^{k-1}C_{k-1}^{i}[(x-x_0)^k]^{(i)}[g(x)]^{(k-1-i)}\)</span>代入<span
+class="math inline">\(x=x_0\)</span>得，<span
+class="math inline">\(f^{(k-1)}(x_0)=0\)</span>.同理，对<span
+class="math inline">\(i=0,1,...,k-1\)</span>都有<span
+class="math inline">\(f^{(i)}(x_0)=0.\)</span></p>
+<h4 id="证明1">证明1</h4>
+<p>​ 当<span
+class="math inline">\(n=1\)</span>时显然成立。下面用数学归纳法证明： ​
+假设<span class="math inline">\(n=k\)</span>时成立，即<span
+class="math inline">\(f^{(k-1)}(x)=0\)</span>在<span
+class="math inline">\([a,b]\)</span>上至少有一个根 ​ 当<span
+class="math inline">\(n=k+1\)</span>时，要证明<span
+class="math inline">\(f^{(k)}(x)=0\)</span>在<span
+class="math inline">\([a,b]\)</span>上至少有一个根,只需证<span
+class="math inline">\(f&#39;(x)\)</span>在<span
+class="math inline">\([a,b]\)</span>上至少有<span
+class="math inline">\(k\)</span>个根即可. 若<span
+class="math inline">\(f(x)\)</span>有<span
+class="math inline">\(r\)</span>个不同实根，那么可以设<span
+class="math inline">\(f(x)\)</span>的根分别为<span
+class="math inline">\(x_1,x_2,...,x_r.\)</span>由于<span
+class="math inline">\(f(x_1)=f(x_2)=...=f(x_r)=0\)</span>,至少存在一个点<span
+class="math inline">\(\xi_j \in (x_j,x_{j+1})\)</span>使得<span
+class="math inline">\(f&#39;(\xi_j)=0.\)</span>共得到至少<span
+class="math inline">\(r-1\)</span>个零点。设单根共有<span
+class="math inline">\(t\)</span>个，则不妨把单根表示为<span
+class="math inline">\(x_{i_1},x_{i_2},...,x_{i_t}.\)</span>则<span
+class="math inline">\(f(x)\)</span>可表示为 <span
+class="math inline">\(f(x)=(x-x_{i_1})(x-x_{i_2})...(x-x_{i_t})g(x)\)</span>所以<span
+class="math inline">\(f&#39;(x)\)</span>必然存在零点<span
+class="math inline">\(k-t\)</span>个.因为显然有<span
+class="math inline">\(r\geq t\)</span>,故<span
+class="math inline">\(f&#39;(x)\)</span>至少有<span
+class="math inline">\((r-1)+(k+1-t)\geq k\)</span>个零点.</p>
+<h4 id="证明2">证明2：</h4>
+<p>加强命题，设<span class="math inline">\(f(x)=0\)</span>在<span
+class="math inline">\([a,b]\)</span>上有<span
+class="math inline">\(n\)</span>个根，则<span
+class="math inline">\(f^{(n-m)}(x)=0\)</span>在<span
+class="math inline">\([a,b]\)</span>上至少有<span
+class="math inline">\(m\)</span>个根. 当<span
+class="math inline">\(n=1\)</span>时显然成立。下面用第二类数学归纳法证明：
+假设<span class="math inline">\(n\leq k\)</span>时成立，即对任意<span
+class="math inline">\(f(x)\)</span>都有<span
+class="math inline">\(f^{(n-m)}(x)=0\)</span>在<span
+class="math inline">\([a,b]\)</span>上至少有<span
+class="math inline">\(m\)</span>个根 当n=k+1时，要证明<span
+class="math inline">\(f^{(k+1-m)}(x)=0\)</span>在<span
+class="math inline">\([a,b]\)</span>上至少有<span
+class="math inline">\(m\)</span>个根.</p>
+<p>若增加的一个根<span class="math inline">\(x^*\neq
+x_{initial}(x_{initial}\)</span>为原先的<span
+class="math inline">\(k\)</span>个根中的任意一个)：显然成立
+若增加的一个根<span
+class="math inline">\(x^*\)</span>使原先的根变为重根：则有<span
+class="math inline">\(f&#39;(x^*)=0\)</span>，于是<span
+class="math inline">\(f&#39;(x)\)</span>有了<span
+class="math inline">\(k\)</span>个零点，结论也显然成立
+若增加的一个根本来是<span
+class="math inline">\(l\)</span>重根（增加后变为了<span
+class="math inline">\(l+1\)</span>重根）：原本对于<span
+class="math inline">\(f^{(l)}(x)\)</span>，<span
+class="math inline">\(l\leq k\)</span>，由假设条件可以得到<span
+class="math inline">\(f^{(l)}(x)=0\)</span>在<span
+class="math inline">\([a,b]\)</span>上至少有<span
+class="math inline">\(k-l\)</span>个根.原先<span
+class="math inline">\(f^{(l)}(x^*)\neq 0\)</span>，而增加一个根后<span
+class="math inline">\(f^{(l)}(x^*)=0\)</span>，于是<span
+class="math inline">\(f^{(l)}(x)=0\)</span>在<span
+class="math inline">\([a,b]\)</span>上至少有<span
+class="math inline">\(k+1-l\)</span>个根，就证明了加强后的命题。</p>
+</article>
+</body>
+</html>

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://cereal137.github.io/css/github-markdown-light.css">
+    <style>
+      .markdown-body {
+        box-sizing: border-box;
+        min-width: 200px;
+        max-width: 980px;
+        margin: 0 auto;
+        padding: 45px;
+      }
+    
+      @media (max-width: 767px) {
+        .markdown-body {
+          padding: 15px;
+        }
+      }
+    </style>
+    <script>
+        MathJax = {
+          tex: {
+            inlineMath: [['$', '$'], ['\\(', '\\)']]
+          },
+          svg: {
+            fontCache: 'global'
+          }
+        };
+        </script>
+        <script type="text/javascript" id="MathJax-script" async
+          src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+        </script>
+    </head>
+<body>
+<article class="markdown-body">
+<header id="title-block-header">
+<h1 class="title">矢量分析</h1>
+<p class="date">2021-11-30 12:43:27</p>
+</header>
+<nav id="TOC" role="doc-toc">
+<ul>
+<li><a href="#vector-triple-product"
+id="toc-vector-triple-product">Vector Triple Product</a></li>
+</ul>
+</nav>
+<h2 id="vector-triple-product">Vector Triple Product</h2>
+<h4
+id="不引入坐标试证明vecatimes-vecb-times-veccveca-cdot-veccvecb-vecb-cdot-veccveca">不引入坐标，试证明：<span
+class="math inline">\((\vec{a}\times \vec{b}) \times \vec{c}=(\vec{a}
+\cdot \vec{c})\vec{b}-(\vec{b} \cdot \vec{c})\vec{a}\)</span></h4>
+<h4 id="证明">证明：</h4>
+<p>​ 由于<span class="math inline">\((\vec{a}\times \vec{b})\times
+\vec{c} \perp (\vec{a}\times \vec{b})\)</span> ，可以得到 <span
+class="math inline">\((\vec{a}\times \vec{b}) \times \vec{c}\)</span>
+的结果在 <span class="math inline">\(\vec{a}\)</span> 和 <span
+class="math inline">\(\vec{b}\)</span> 构成的平面上，可以设:</p>
+<p>​ <span class="math inline">\((\vec{a}\times \vec{b})\times
+\vec{c}=X\vec{a}+Y\vec{b}\)</span></p>
+<p>​ 同时，<span class="math inline">\((\vec{a}\times \vec{b})\times
+\vec{c} \perp \vec{c}\)</span> ，把上式左右同时点乘 <span
+class="math inline">\(\vec{c}\)</span> 于是得到：</p>
+<p>​ <span class="math inline">\((X\vec{a}+Y\vec{b})\cdot
+\vec{c}=0\)</span></p>
+<p>​ <span class="math inline">\(X\vec{a}\cdot \vec{c}=-Y\vec{b}\cdot
+\vec{c}\)</span></p>
+<p>​ 这一步的观察比较关键，由于 <span
+class="math inline">\(\vec{a},\vec{b},\vec{c}\)</span>
+的选择是任意的，于是两边的系数项<span
+class="math inline">\(X\)</span>，<span
+class="math inline">\(Y\)</span>要满足如下条件：</p>
+<p>​ <span
+class="math inline">\(\begin{cases}X=-C(\vec{a},\vec{b},\vec{c})\cdot(\vec{b}
+\cdot \vec{c})\\Y=C(\vec{a},\vec{b},\vec{c})\cdot(\vec{a} \cdot
+\vec{c})\end{cases}\)</span></p>
+<p>​ 其中，<span
+class="math inline">\(C(\vec{a},\vec{b},\vec{c})\)</span>是关于 <span
+class="math inline">\(\vec{a},\vec{b},\vec{c}\)</span>
+的系数，对于同一组 <span
+class="math inline">\(\vec{a},\vec{b},\vec{c}\)</span> ，<span
+class="math inline">\(C(\vec{a},\vec{b},\vec{c})\)</span>
+输出唯一的常数.</p>
+<p>​ 于是把结果进一步写为：</p>
+<p>​ <span class="math inline">\((\vec{a}\times \vec{b})\times
+\vec{c}=-C(\vec{a},\vec{b},\vec{c})\cdot(\vec{b} \cdot
+\vec{c})\vec{a}+C(\vec{a},\vec{b},\vec{c})\cdot(\vec{a} \cdot
+\vec{c})\vec{b}=C(\vec{a},\vec{b},\vec{c})\cdot((\vec{a} \cdot
+\vec{c})\vec{b}-(\vec{b}\cdot\vec{c})\vec{a})\)</span></p>
+<p>​ 那么只需要求解 <span class="math inline">\(C\)</span>
+了。特殊地，先考虑 <span class="math inline">\(\vec{c}=\vec{a}\)</span>
+的情形，这时：</p>
+<p>​ <span class="math inline">\((\vec{a}\times \vec{b})\times
+\vec{a}=C(\vec{a},\vec{b},\vec{a})\cdot((\vec{a} \cdot
+\vec{a})\vec{b}-(\vec{a}\cdot\vec{b})\vec{a})\)</span></p>
+<p>​ 这一步在上式左右两边同时点乘 <span
+class="math inline">\(\vec{b}\)</span>
+，再利用三矢量的混合积公式，得到了：</p>
+<p>​ <span class="math inline">\((\vec{a}\times
+\vec{b})\cdot(\vec{a}\times
+\vec{b})=C(\vec{a},\vec{b},\vec{a})\cdot((\vec{a} \cdot
+\vec{a})(\vec{b}\cdot\vec{b})-(\vec{a}\cdot\vec{b})(\vec{a}\cdot\vec{b}))\)</span></p>
+<p>​ 现在可以约去两边的模方，得到 <span
+class="math inline">\(\sin^2\theta=C(\vec{a},\vec{b},\vec{a})\cdot(1-\cos^2\theta)\)</span>
+，其中 <span class="math inline">\(\theta\)</span> 为 <span
+class="math inline">\(\vec{a}\)</span> 与 <span
+class="math inline">\(\vec{b}\)</span> 的夹角。</p>
+<p>​ 显然有 <span
+class="math inline">\(C(\vec{a},\vec{b},\vec{a})=1\)</span>
+，先记下这个结论。</p>
+<p>​ 接下来考虑普遍的情形：</p>
+<p>​ <span class="math inline">\(((\vec{a}\times \vec{b})\times
+\vec{c})\cdot\vec{a}=C(\vec{a},\vec{b},\vec{c})\cdot((\vec{a} \cdot
+\vec{c})(\vec{b}\cdot\vec{a})-(\vec{b}\cdot\vec{c})(\vec{a}\cdot\vec{a}))\)</span></p>
+<p>​ 再使用三矢量的混合积，有</p>
+<p>​ <span class="math inline">\((\vec{a}\times(\vec{a}\times
+\vec{b}))\cdot\vec{c}=-((\vec{a}\times
+\vec{b})\times\vec{a})\cdot\vec{c}=-(\vec{a} \cdot
+\vec{a})(\vec{b}\cdot\vec{c})+(\vec{a}\cdot\vec{b})(\vec{a}\cdot\vec{c})\)</span></p>
+<p>​ 比较两式右侧，可以得到 <span
+class="math inline">\(C(\vec{a},\vec{b},\vec{c})=1\)</span>.</p>
+<p>​ 最后，我们就成功证明了<span class="math inline">\((\vec{a}\times
+\vec{b}) \times \vec{c}=(\vec{a} \cdot \vec{c})\vec{b}-(\vec{b} \cdot
+\vec{c})\vec{a}\)</span> .</p>
+<h4 id="一道练习题">一道练习题</h4>
+<h4
+id="用上述方法证明the-schwarz-inequality-lvertvecacdotvecb-rvert-leq-lvert-veca-rvert-lvert-vecbrvert">用上述方法证明：The
+Schwarz inequality <span class="math inline">\(\lvert\vec{a}\cdot\vec{b}
+\rvert \leq \lvert \vec{a} \rvert \lvert \vec{b}\rvert\)</span></h4>
+<h4 id="证明-1">证明：</h4>
+<p>​ <span
+class="math inline">\(\lvert{\vec{a}\times\vec{b}}\rvert^2\geq0\iff(\vec{a}\times\vec{b})\cdot(\vec{a}\times\vec{b})\geq0\)</span></p>
+<p>​ 使用三矢量的混合积：</p>
+<p><span
+class="math inline">\((\vec{a}\times\vec{b})\cdot(\vec{a}\times\vec{b})=\vec{b}\cdot((\vec{a}\times\vec{b})\times\vec{a})=\vec{b}\cdot(\vec{b}(\vec{a}\cdot\vec{a})-\vec{a}(\vec{a}\cdot\vec{b}))=(\vec{a}\cdot\vec{a})(\vec{b}\cdot\vec{b})-(\vec{a}\cdot\vec{b})(\vec{a}\cdot\vec{b})\geq0\)</span></p>
+<p>​ 从而有： <span
+class="math inline">\((\vec{a}\cdot\vec{a})(\vec{b}\cdot\vec{b})\geq(\vec{a}\cdot\vec{b})(\vec{a}\cdot\vec{b})\)</span>.
+即<span class="math inline">\(\lvert \vec{a}\cdot\vec{b}\rvert
+\leq\lvert\vec{a}\rvert \lvert \vec{b}\rvert\)</span>.</p>
+</article>
+</body>
+</html>

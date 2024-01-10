@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://cereal137.github.io/css/github-markdown-light.css">
+    <style>
+      .markdown-body {
+        box-sizing: border-box;
+        min-width: 200px;
+        max-width: 980px;
+        margin: 0 auto;
+        padding: 45px;
+      }
+    
+      @media (max-width: 767px) {
+        .markdown-body {
+          padding: 15px;
+        }
+      }
+    </style>
+    <script>
+        MathJax = {
+          tex: {
+            inlineMath: [['$', '$'], ['\\(', '\\)']]
+          },
+          svg: {
+            fontCache: 'global'
+          }
+        };
+        </script>
+        <script type="text/javascript" id="MathJax-script" async
+          src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+        </script>
+    </head>
+<body>
+<article class="markdown-body">
+<nav id="TOC" role="doc-toc">
+<ul>
+<li><a href="#the-summation-convention-爱因斯坦求和约定"
+id="toc-the-summation-convention-爱因斯坦求和约定">The Summation
+Convention 爱因斯坦求和约定</a>
+<ul>
+<li><a href="#内积" id="toc-内积">内积</a></li>
+<li><a href="#外积" id="toc-外积">外积</a></li>
+<li><a href="#三重积" id="toc-三重积">三重积</a></li>
+</ul></li>
+</ul>
+</nav>
+<h1 id="the-summation-convention-爱因斯坦求和约定">The Summation
+Convention 爱因斯坦求和约定</h1>
+<p>爱因斯坦求和约定将 <span class="math inline">\(i\)</span>
+同时出现在上标和下标时的情况约定为对 <span
+class="math inline">\(i\)</span> 进行求和，极大地简化了求和的和式。</p>
+<p>​        <span class="math inline">\(\boldsymbol{u}=\sum_{i=1}^n
+u_i\boldsymbol{g}^i=u_i\boldsymbol{g}^i\)</span></p>
+<p>{% asset_img Einstein.JPG Albert Einstein %}</p>
+<h3 id="内积">内积</h3>
+<p>​    <span class="math inline">\(\boldsymbol{u}=\sum_{i=1}^n
+u_i\boldsymbol{g}^i=u_i\boldsymbol{g}^i\)</span></p>
+<p>​    <span class="math inline">\(\boldsymbol{v}=\sum_{j=1}^n
+v_j\boldsymbol{g}^j=v_j\boldsymbol{g}^j\)</span></p>
+<p>​    <span
+class="math inline">\(\boldsymbol{u}\cdot\boldsymbol{v}=\sum_{i=1}^n
+u_i\boldsymbol{g}^i\cdot\sum_{j=1}^n
+v_j\boldsymbol{g}^j=\sum_{i=1}^n\sum_{j=1}^n
+u_iv_j\boldsymbol{g}^i\cdot\boldsymbol{g}^j=u_iv_j\boldsymbol{g}^i\cdot\boldsymbol{g}^j\)</span></p>
+<p>这样看来<span
+class="math inline">\(\boldsymbol{u}\cdot\boldsymbol{v}\)</span>的结果非常复杂，<span
+class="math inline">\(n=3\)</span>时写出来是：</p>
+<p><span
+class="math inline">\(u_1v_1\boldsymbol{g}^1\cdot\boldsymbol{g}^1+u_1v_2\boldsymbol{g}^1\cdot\boldsymbol{g}^2+u_1v_3\boldsymbol{g}^1\cdot\boldsymbol{g}^3+u_2v_1\boldsymbol{g}^2\cdot\boldsymbol{g}^1+u_2v_2\boldsymbol{g}^2\cdot\boldsymbol{g}^2+u_2v_3\boldsymbol{g}^2\cdot\boldsymbol{g}^3+u_3v_1\boldsymbol{g}^3\cdot\boldsymbol{g}^1+u_3v_2\boldsymbol{g}^3\cdot\boldsymbol{g}^2+u_3v_3\boldsymbol{g}^3\cdot\boldsymbol{g}^3\)</span></p>
+<p>仅仅到这里并不能展现出爱因斯坦求和约定的威力，为此我们还需要引入另一组基<span
+class="math inline">\(\boldsymbol{g}_1,\boldsymbol{g}_2,...,\boldsymbol{g}_n\)</span>。</p>
+<p>在这组新的基下，原先的坐标用上标来表示 <span
+class="math inline">\(\boldsymbol{u}=u^i\boldsymbol{g}_i\)</span> .</p>
+<p>这一组基并不是任意的，而是满足<span
+class="math inline">\(\boldsymbol{g}_i\boldsymbol{g}^j=\delta_i^j\)</span>
+，其中 <span class="math inline">\(\delta_i^j\)</span>
+是Kronecker函数，当 <span class="math inline">\(i=j\)</span> 时 <span
+class="math inline">\(\delta_i^j=1\)</span>；当 $ij $ 时， <span
+class="math inline">\(\delta_i^j=0\)</span> .</p>
+<p>在给定一组基 <span
+class="math inline">\(\boldsymbol{g}^1,\boldsymbol{g}^2,...,\boldsymbol{g}^n\)</span>
+的条件下，我们可以通过线性代数的方法求解出 <span
+class="math inline">\(\boldsymbol{g}_1,\boldsymbol{g}_2,...,\boldsymbol{g}_n\)</span></p>
+<p>设 <span
+class="math inline">\(G=\begin{bmatrix}\boldsymbol{g}^1,\boldsymbol{g}^2,...,\boldsymbol{g}^n\end{bmatrix}\)</span>，则<span
+class="math inline">\(\boldsymbol{g}_j^TG=e_j\)</span>，故把<span
+class="math inline">\(\boldsymbol{g}_1^T,\boldsymbol{g}_2^T,...,\boldsymbol{g}_n^T\)</span>作为矩阵的行向量，可以发现这个矩阵就是<span
+class="math inline">\(G^{-1}\)</span>，因为<span
+class="math inline">\(G^{-1}G=I_n\)</span>.</p>
+<p>现在来看<span
+class="math inline">\(\boldsymbol{u}\cdot\boldsymbol{v}\)</span>，不把<span
+class="math inline">\(\boldsymbol{v}\)</span>写成<span
+class="math inline">\(\boldsymbol{v}=\sum_{j=1}^n
+v_j\boldsymbol{g}^j=v_j\boldsymbol{g}^j\)</span>，而换成新找到的一组基<span
+class="math inline">\(\boldsymbol{v} =v^j\boldsymbol{g}_j\)</span></p>
+<p>于是<span
+class="math inline">\(\boldsymbol{u}\cdot\boldsymbol{v}=u_iv^j\boldsymbol{g}^i\boldsymbol{g}_j=u_iv^i\)</span>，内积的结果就被很简单的表达出来了。</p>
+<p>类似地也有：<span
+class="math inline">\(\boldsymbol{u}\cdot\boldsymbol{v}=u^iv_j\boldsymbol{g}_i\boldsymbol{g}^j=u^iv_i\)</span></p>
+<h3 id="外积">外积</h3>
+<p>三维空间中，可以选取一组基<span
+class="math inline">\(\boldsymbol{g}^1,\boldsymbol{g}^2,\boldsymbol{g}^3\)</span>.</p>
+<p>​    <span
+class="math inline">\(\boldsymbol{u}\times\boldsymbol{v}=(\boldsymbol{u}\times\boldsymbol{v})_k\boldsymbol{g}^k\)</span>
+其中，<span
+class="math inline">\((\boldsymbol{u}\times\boldsymbol{v})_k\)</span>指的是在基<span
+class="math inline">\(\boldsymbol{g}^k\)</span>下的坐标。</p>
+<p>代入<span
+class="math inline">\(\boldsymbol{u}=u_i\boldsymbol{g}^i，\boldsymbol{v}=v_j\boldsymbol{g}^j\)</span>
+后，</p>
+<p>​    <span
+class="math inline">\(\boldsymbol{u}\times\boldsymbol{v}=(\boldsymbol{u}\times\boldsymbol{v})_k\boldsymbol{g}^k=u_iv_j(\boldsymbol{g}^i\times\boldsymbol{g}^j)\cdot\boldsymbol{g}^k\)</span> </p>
+<p>定义Jacobian行列式为<span
+class="math inline">\((\boldsymbol{g}^1\times\boldsymbol{g}^2)\cdot\boldsymbol{g}^3=J\)</span></p>
+<p>和Levi-Civita符号<span
+class="math inline">\(\epsilon_{ijk}=J(-1)^{\tau(ijk)}\)</span></p>
+<p>可以发现<span class="math inline">\(\epsilon_{ijk}=(\boldsymbol{g}^i
+\times\boldsymbol{g}^j)\cdot\boldsymbol{g}^k\)</span></p>
+<p>于是<span
+class="math inline">\((\boldsymbol{u}\times\boldsymbol{v})_k=u_iv_j\epsilon_{ijk}\)</span>
+，可以得到由此三维矢量的外积公式。</p>
+<h3 id="三重积">三重积</h3>
+<p>三维情形下的Levi-Civita符号有如下关系：</p>
+<p>​    <span
+class="math inline">\(\epsilon_{pqr}\epsilon^{ijk}=\begin{vmatrix}\delta_p^i&amp;\delta_q^i&amp;\delta_r^i\\
+\delta_p^j&amp;\delta_q^j&amp;\delta_r^j\\
+\delta_p^k&amp;\delta_q^k&amp;\delta_r^k\end{vmatrix}\)</span></p>
+<p>当取定 <span class="math inline">\(r=k\)</span> 时，上式变为<span
+class="math inline">\(\epsilon_{pqk}\epsilon^{ijk}=\delta_p^i\delta_q^j-\delta_p^j\delta_q^i\)</span></p>
+<p>对于三重积 <span
+class="math inline">\((\boldsymbol{u}\times\boldsymbol{v})\times\boldsymbol{w}=\boldsymbol{v}(\boldsymbol{u}\cdot\boldsymbol{w})-\boldsymbol{u}(\boldsymbol{v}\cdot\boldsymbol{w})\)</span>
+，只需要求解在上指标或者下指标下的坐标就可以证明。</p>
+<p>为此，先计算<span
+class="math inline">\((\boldsymbol{u}\times\boldsymbol{v})^{k}\)</span>，再计算<span
+class="math inline">\(((\boldsymbol{u}\times\boldsymbol{v})\times\boldsymbol{w})_p\)</span>
+令 <span class="math inline">\(r=k\)</span> 就能得出结论了。</p>
+<p>​    <span
+class="math inline">\((\boldsymbol{u}\times\boldsymbol{v})^{k}=(\boldsymbol{u}\times\boldsymbol{v})\cdot\boldsymbol{g}^k=u_iv_j\epsilon^{ijk}\)</span></p>
+<p>​    <span
+class="math inline">\(\begin{aligned}((\boldsymbol{u}\times\boldsymbol{v})\times\boldsymbol{w})_p&amp;=((\boldsymbol{u}\times\boldsymbol{v})\times\boldsymbol{w})\cdot
+\boldsymbol{g}_p\\&amp;=(\boldsymbol{u}\times\boldsymbol{v})^rw^q\cdot(\boldsymbol{g}_r\times\boldsymbol{g}_q)\cdot\boldsymbol{g}_p\\&amp;=(\boldsymbol{u}\times\boldsymbol{v})^rw^q\cdot\epsilon_{rqp}\\&amp;=u_iv_j\epsilon^{ijk}w^q\epsilon_{kqp}-u_iv_j\epsilon^{ijk}w^q\epsilon_{pqk}\\&amp;=-u_iv_jw^q(\delta_p^i\delta_q^j-\delta_q^i\delta_p^j)\\&amp;=u_iv_jw^q\delta_q^i\delta_p^j-u_iv_jw^q\delta_p^i\delta_q^j\\&amp;=u_iw^iv_p-u_pv_iw^i\end{aligned}\)</span></p>
+<p>这样我们就得到了<span
+class="math inline">\((\boldsymbol{u}\times\boldsymbol{v})\times\boldsymbol{w}=\boldsymbol{v}(\boldsymbol{u}\cdot\boldsymbol{w})-\boldsymbol{u}(\boldsymbol{v}\cdot\boldsymbol{w})\)</span></p>
+</article>
+</body>
+</html>

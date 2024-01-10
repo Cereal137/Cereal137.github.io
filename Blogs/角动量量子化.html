@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://cereal137.github.io/css/github-markdown-light.css">
+    <style>
+      .markdown-body {
+        box-sizing: border-box;
+        min-width: 200px;
+        max-width: 980px;
+        margin: 0 auto;
+        padding: 45px;
+      }
+    
+      @media (max-width: 767px) {
+        .markdown-body {
+          padding: 15px;
+        }
+      }
+    </style>
+    <script>
+        MathJax = {
+          tex: {
+            inlineMath: [['$', '$'], ['\\(', '\\)']]
+          },
+          svg: {
+            fontCache: 'global'
+          }
+        };
+        </script>
+        <script type="text/javascript" id="MathJax-script" async
+          src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+        </script>
+    </head>
+<body>
+<article class="markdown-body">
+<header id="title-block-header">
+<h1 class="title">角动量量子化</h1>
+<p class="date">2022-03-03 19:32:46</p>
+</header>
+<nav id="TOC" role="doc-toc">
+<ul>
+<li><a href="#角动量量子化" id="toc-角动量量子化">角动量量子化</a>
+<ul>
+<li><a href="#勒让德方程1-x2y-2xyll1y0"
+id="toc-勒让德方程1-x2y-2xyll1y0">勒让德方程：<span
+class="math inline">\((1-x^2)y&#39;&#39;-2xy&#39;+l(l+1)y=0\)</span></a></li>
+<li><a href="#勒让德方程1-x2theta-2xthetalambda-fracm21-x2theta0"
+id="toc-勒让德方程1-x2theta-2xthetalambda-fracm21-x2theta0">勒让德方程：<span
+class="math inline">\((1-x^2)\Theta&#39;&#39;-2x\Theta&#39;+（\lambda-\frac{m^2}{1-x^2})\Theta=0\)</span></a></li>
+<li><a href="#氢原子模型" id="toc-氢原子模型">氢原子模型</a></li>
+<li><a href="#角动量量子化lsqrtll1hbar"
+id="toc-角动量量子化lsqrtll1hbar">角动量量子化<span
+class="math inline">\(L=\sqrt{l(l+1)}\hbar\)</span></a></li>
+</ul></li>
+</ul>
+</nav>
+<h1 id="角动量量子化">角动量量子化</h1>
+<p>先从数理方法的基础开始</p>
+<h3 id="勒让德方程1-x2y-2xyll1y0">勒让德方程：<span
+class="math inline">\((1-x^2)y&#39;&#39;-2xy&#39;+l(l+1)y=0\)</span></h3>
+<p>在<span class="math inline">\(x=0\)</span>邻域上解l阶勒让德方程：</p>
+<p>设<span
+class="math inline">\(y(x)=\sum_{k=0}^{+\infty}a_kx^k\)</span></p>
+<p>则有<span
+class="math inline">\(y&#39;(x)=\sum_{k=0}^{+\infty}(k+1)a_{k+1}x^k\)</span>，以及<span
+class="math inline">\(y&#39;&#39;(x)=\sum_{k=0}^{+\infty}(k+2)(k+1)a_{k+2}x^k\)</span></p>
+<p>代入方程得到了：</p>
+<p><span
+class="math inline">\((1-x^2)\sum_{k=0}^{+\infty}(k+2)(k+1)a_{k+2}x^k-2x\sum_{k=0}^{+\infty}(k+1)a_{k+1}x^k+l(l+1)\sum_{k=0}^{+\infty}a_kx^k=0\)</span></p>
+<p>关注<span class="math inline">\(x^k\)</span>的系数应该为0:</p>
+<p><span
+class="math inline">\((k+1)(k+2)a_{k+2}-k(k-1)a_k-2ka_k+l(l+1)a_k=0\)</span></p>
+<p>于是：<span
+class="math inline">\(a_{k+2}=\frac{k(k+1)-l(l+1)}{(k+1)(k+2)}a_k\)</span></p>
+<p>在这里l是常数，由于物理上的限制，方程的级数解必须收敛，这就要求了在某处分子为0，于是限制了l必须整数！</p>
+<h3
+id="勒让德方程1-x2theta-2xthetalambda-fracm21-x2theta0">勒让德方程：<span
+class="math inline">\((1-x^2)\Theta&#39;&#39;-2x\Theta&#39;+（\lambda-\frac{m^2}{1-x^2})\Theta=0\)</span></h3>
+<p>作变换<span
+class="math inline">\(\Theta(x)=(1-x^2)^{\frac{m}{2}}y(x)\)</span></p>
+<p><span
+class="math inline">\(\Theta&#39;(x)=(1-x^2)^{\frac{m}{2}}y&#39;-mx(1-x^2)^{\frac{m}{2}-1}y\)</span></p>
+<p><span
+class="math inline">\(\Theta&#39;&#39;(x)=(1-x^2)^{\frac{m}{2}}y&#39;&#39;-2mx(1-x^2)^{\frac{m}{2}-1}y&#39;-m(1-x^2)^{\frac{m}{2}-1}y+m(m-2)x^2(1-x^2)^{\frac{m}{2}-2}y\)</span></p>
+<p>代入方程得到了：</p>
+<p><span
+class="math inline">\((1-x^2)y&#39;&#39;-2(m+1)xy&#39;+[\lambda-m(m+1)]y=0\)</span></p>
+<p>再次使用级数法代入方程：</p>
+<p><span
+class="math inline">\((1-x^2)\sum_{k=0}^{+\infty}(k+2)(k+1)a_{k+2}x^k-2(m+1)x\sum_{k=0}^{+\infty}(k+1)a_{k+1}x^k+[\lambda-m(m+1)]a_k=0\)</span></p>
+<p>同样地也可以得到递推关系：<span
+class="math inline">\(a_{k+2}=\frac{k(k-1)+2k(m+1)+m(m+1)-\lambda}{(k+1)(k+2)}a_k\)</span></p>
+<p>但是这里就非常头疼了，分母为0的条件转化为<span
+class="math inline">\(\lambda=k(k-1)+2k(m+1)+m(m+1)\)</span></p>
+<p>似乎不太好确定<span
+class="math inline">\(\lambda\)</span>的取值，所以先做一些尝试，因为k在这里是任意的自然数，所以代入k的值。</p>
+<p>当尝试k=l-m时：<span
+class="math inline">\(\lambda=l(l+1)\)</span>，这说明了当<span
+class="math inline">\(m\leq l\)</span>时满足物理上的约束。</p>
+<p>这是不是意味着只有当<span
+class="math inline">\(\lambda=l(l+1)\)</span>的时候满足物理上的约束呢？</p>
+<p>这时候就更加清晰了，注意到：</p>
+<p><span
+class="math inline">\(k(k-1)+2k(m+1)+m(m+1)-\lambda=(k+(m+\frac{1}{2}))^2-\frac{1}{4}-\lambda=0\)</span></p>
+<p><span
+class="math inline">\(\lambda=(k+m+1)(k+m)\)</span>，确实如此。</p>
+<h3 id="氢原子模型">氢原子模型</h3>
+<p>氢原子所处的库伦势能为<span
+class="math inline">\(V=-\frac{Ze^2}{4\pi\epsilon_0 r}\)</span></p>
+<p>列出薛定谔方程：<span
+class="math inline">\(E\psi=V\psi-\frac{\hbar}{2m}\nabla^2\psi\)</span></p>
+<p>在球坐标下<span
+class="math inline">\(\nabla^2=\frac{1}{r^2}\frac{\partial}{\partial
+r}(r^2\frac{\partial}{\partial
+r})+\frac{1}{r^2\sin\theta}\frac{\partial}{\partial{\theta}}(\sin\theta\frac{\partial}{\partial\theta})+\frac{1}{r^2\sin^2\theta}\frac{\partial^2}{\partial\phi^2}\)</span></p>
+<p>代入之后得到了：</p>
+<p><span class="math inline">\(\frac{1}{r^2}\frac{\partial}{\partial
+r}(r^2\frac{\partial\psi}{\partial
+r})+\frac{1}{r^2\sin\theta}\frac{\partial}{\partial{\theta}}(\sin\theta\frac{\partial\psi}{\partial\theta})+\frac{1}{r^2\sin^2\theta}\frac{\partial^2\psi}{\partial\phi^2}+\frac{2m}{\hbar^2}(E+\frac{Ze^2}{4\pi\epsilon_0r})\psi=0\)</span></p>
+<p>这里还是太复杂了，我们试图把<span
+class="math inline">\(\psi\)</span>简化，写成这样的形式：<span
+class="math inline">\(\psi=R(r)\cdot Y(\theta,\phi)\)</span></p>
+<p><span class="math inline">\(\frac{Y}{r^2}\frac{\partial}{\partial
+r}(r^2\frac{\partial R}{\partial
+r})+\frac{R}{r^2\sin\theta}\frac{\partial}{\partial{\theta}}(\sin\theta\frac{\partial
+Y}{\partial\theta})+\frac{R}{r^2\sin^2\theta}\frac{\partial^2Y}{\partial\phi^2}+\frac{2m}{\hbar^2}(E+\frac{Ze^2}{4\pi\epsilon_0r})RY=0\)</span></p>
+<p><span class="math inline">\(\frac{1}{R}\frac{\partial}{\partial
+r}(r^2\frac{\partial R}{\partial
+r})+\frac{1}{Y\sin\theta}\frac{\partial}{\partial{\theta}}(\sin\theta\frac{\partial
+Y}{\partial\theta})+\frac{1}{Y\sin^2\theta}\frac{\partial^2Y}{\partial\phi^2}+\frac{2mr^2}{\hbar^2}(E+\frac{Ze^2}{4\pi\epsilon_0r})=0\)</span></p>
+<p>移项后得到了：</p>
+<p><span class="math inline">\(\frac{1}{R}\frac{\partial}{\partial
+r}(r^2\frac{\partial R}{\partial
+r})+\frac{2mr^2}{\hbar^2}(E+\frac{Ze^2}{4\pi\epsilon_0r})=-\frac{1}{Y\sin\theta}\frac{\partial}{\partial{\theta}}(\sin\theta\frac{\partial
+Y}{\partial\theta})-\frac{1}{Y\sin^2\theta}\frac{\partial^2Y}{\partial\phi^2}\)</span></p>
+<p>注意到LHS只和r有关，而RHS只与<span
+class="math inline">\(\theta,\phi\)</span>有关，所以令<span
+class="math inline">\(\frac{1}{R}\frac{\partial}{\partial
+r}(r^2\frac{\partial R}{\partial
+r})+\frac{2mr^2}{\hbar^2}(E+\frac{Ze^2}{4\pi\epsilon_0r})=-\frac{1}{Y\sin\theta}\frac{\partial}{\partial{\theta}}(\sin\theta\frac{\partial
+Y}{\partial\theta})-\frac{1}{Y\sin^2\theta}\frac{\partial^2Y}{\partial\phi^2}=\lambda\)</span></p>
+<p>把目光聚焦到第二个等号上，再把复杂的式子做一个分离，令<span
+class="math inline">\(Y(\theta,\phi)=\Theta(\theta)\cdot\Phi(\phi)\)</span></p>
+<p>得到了：<span
+class="math inline">\(\frac{\sin\theta}{\Theta}\frac{d}{d\theta}(\sin\theta\frac{d\Theta}{d\theta})+\lambda\sin^2\theta=-\frac{d^2\Phi}{\Phi
+d\phi^2}=\nu\)</span></p>
+<p>此时，第二个等号就很好解决了：<span
+class="math inline">\(\Phi(\phi)=Ae^{i\sqrt{\nu}\phi}+Be^{-i\sqrt{\nu}\phi}\)</span></p>
+<p>作为波函数，<span
+class="math inline">\(\Phi(\phi)\)</span>必须是单值函数，也就意味着<span
+class="math inline">\(\Phi(\phi+2N\pi)=\Phi(\phi)\)</span></p>
+<p>所以<span
+class="math inline">\(\sqrt{\nu}=m\)</span>必须是整数。<span
+class="math inline">\(\Phi(\phi)=Ae^{im\phi}+Be^{-im\phi}\)</span></p>
+<p>重新代回得到<span
+class="math inline">\(\frac{1}{\sin\theta}\frac{d}{d\theta}(\sin\theta\frac{d\Theta}{d\theta})+(\lambda-\frac{m^2}{\sin^2\theta})\Theta=0\)</span></p>
+<p>遇到这样的微分方程好像没什么办法，试图做变化：<span
+class="math inline">\(\theta=\arccos x\)</span></p>
+<p><span
+class="math inline">\(\frac{d\Theta}{d\theta}=\frac{d\Theta}{dx}\frac{dx}{d\theta}=-\sin\theta\frac{dx}{d\theta}\)</span></p>
+<p>于是就转化为<span
+class="math inline">\((1-x^2)\frac{d^2\Theta}{dx^2}-2x\frac{d\Theta}{dx}+(\lambda-\frac{m^2}{1-x^2})\Theta=0\)</span></p>
+<p>这就来到了一开始解决的勒让德连带函数问题。</p>
+<p>所以我们有结论<span class="math inline">\(\lambda=l(l+1)\)</span></p>
+<h3 id="角动量量子化lsqrtll1hbar">角动量量子化<span
+class="math inline">\(L=\sqrt{l(l+1)}\hbar\)</span></h3>
+<p>在直角坐标下角动量的各个分量很好表示：</p>
+<p><span
+class="math inline">\(L_x=yp_z-zp_y=-i\hbar(y\frac{\partial}{\partial
+z}-z\frac{\partial}{\partial y})\)</span></p>
+<p><span
+class="math inline">\(L_y=zp_x-xp_z=-i\hbar(z\frac{\partial}{\partial
+x}-x\frac{\partial}{\partial z})\)</span></p>
+<p><span
+class="math inline">\(L_z=xp_y-yp_x=-i\hbar(x\frac{\partial}{\partial
+y}-y\frac{\partial}{\partial x})\)</span></p>
+<p>利用链式法则<span class="math inline">\(\frac{\partial}{\partial
+r}=\frac{\partial x}{\partial r}\frac{\partial}{\partial
+x}+\frac{\partial y}{\partial r}\frac{\partial}{\partial
+y}+\frac{\partial z}{\partial r}\frac{\partial}{\partial
+z}\)</span>我们很容易写出逆变换</p>
+<p>于是得到了：</p>
+<p><span class="math inline">\(\frac{\partial}{\partial
+x}=\sin\theta\cos\phi\frac{\partial}{\partial
+r}+\frac{\cos\theta\cos\phi}{r}\frac{\partial}{\partial\theta}-\frac{\sin\phi}{r\sin\theta}\frac{\partial}{\partial
+\phi}\)</span></p>
+<p><span class="math inline">\(\frac{\partial}{\partial
+y}=\sin\theta\sin\phi\frac{\partial}{\partial
+r}+\frac{\cos\theta\sin\phi}{r}\frac{\partial}{\partial\theta}+\frac{\cos\phi}{r\sin\theta}\frac{\partial}{\partial
+\phi}\)</span></p>
+<p><span class="math inline">\(\frac{\partial}{\partial
+z}=\cos\theta\frac{\partial}{\partial
+r}-\frac{\sin\theta}{r}\frac{\partial}{\partial\theta}\)</span></p>
+<p><span
+class="math inline">\(L_x=i\hbar(\cot\theta\cos\phi\frac{\partial}{\partial
+\phi}+\sin\phi\frac{\partial}{\partial \theta})\)</span></p>
+<p><span
+class="math inline">\(L_y=i\hbar(-\cot\theta\sin\phi\frac{\partial}{\partial
+\phi}+\cos\phi\frac{\partial}{\partial \theta})\)</span></p>
+<p><span
+class="math inline">\(L_z=i\hbar\frac{\partial}{\partial\phi}\)</span></p>
+<p>所以我们得到了角动量的算符：</p>
+<p><span
+class="math inline">\(L^2=-\hbar^2[\frac{1}{\sin\theta}\frac{\partial}{\partial
+\theta}(\sin\theta\frac{\partial}{\partial\theta})+\frac{1}{\sin^2\theta}\frac{\partial^2}{\partial\phi^2}]\)</span></p>
+<p>回顾下前面的方程</p>
+<p><span
+class="math inline">\(-[\frac{1}{Y\sin\theta}\frac{\partial}{\partial{\theta}}(\sin\theta\frac{\partial
+Y}{\partial\theta})+\frac{1}{Y\sin^2\theta}\frac{\partial^2Y}{\partial\phi^2}]=\lambda\)</span></p>
+<p><span
+class="math inline">\(-\hbar^2[\frac{1}{\sin\theta}\frac{\partial}{\partial{\theta}}(\sin\theta\frac{\partial
+Y}{\partial\theta})+\frac{1}{\sin^2\theta}\frac{\partial^2Y}{\partial\phi^2}]=\lambda\hbar^2
+Y\)</span></p>
+<p>所以得到了：<span
+class="math inline">\(L^2Y=\lambda\hbar^2Y\)</span>，所以角动量的本征值即为<span
+class="math inline">\(L^2=\lambda\hbar^2\)</span></p>
+<p>即<span class="math inline">\(L=\sqrt{l(l+1)}\hbar\)</span></p>
+</article>
+</body>
+</html>

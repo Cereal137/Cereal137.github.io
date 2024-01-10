@@ -1,4 +1,8 @@
-# The Summation Convention爱因斯坦求和约定
+---
+layout: page
+title: Einstein Summation
+---
+# The Summation Convention 爱因斯坦求和约定
 
 爱因斯坦求和约定将 $i$ 同时出现在上标和下标时的情况约定为对 $i$ 进行求和，极大地简化了求和的和式。
 

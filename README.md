@@ -1,5 +1,6 @@
 # Cereal137.github.io
-Great to see you here in github.  
+
+Great to see you here on Github.  
 
 If you are interested in building your own Website but have no idea what to start with, feel free to contact me!  
 

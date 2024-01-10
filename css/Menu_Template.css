@@ -15,7 +15,7 @@ body {
 	width: 90%;
 	margin-left: auto;
 	margin-right: auto;
-	height: 500px;
+	height: 2600px;
 	background-color: #092206;
 }
 /* Navigation */
@@ -129,13 +129,13 @@ ul li:hover a {
     background-color: #6BF682;
     width:16%;
     padding-left:3%;
-    padding_right:3%;
+    padding-right:3%;
     float:left;
     text-align: center;
     line-height: 300%;
     padding-top:3%;
     padding-bottom: 3%;
-    height:1500px;
+    height: 2000px;
 }
 .menubar ul {
     list-style: none;
@@ -145,11 +145,11 @@ ul li:hover a {
 .menucontent {
     color:aqua;
     background-color: aliceblue;
-    width:81%;
+    width:78%;
     padding-left:0%;
     float:left;
     text-align: center;
-    height:1500px;
+    height: 2000px;
     padding-top: 3%;
     padding-bottom: 3%;
     line-height: 300%;
@@ -375,7 +375,7 @@ footer .footer_column p {
 .footer_banner {
     float:inherit;
 	background-color: #41E84E;
-	padding-top:1500px;/*here to enlarge the footer banner*/
+	padding-top: 2000px;/*here to enlarge the footer banner*/
 	padding-bottom: 60px;
 	margin-bottom: 0px;
 	background-repeat: repeat;

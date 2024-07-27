@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Scholar</title>
+    <link rel="stylesheet" href="scholarstyle.css">
+    <script defer src="scholar.js"></script>
+
+</head>
+
+<body>
+    <h1>Scholar Homepage</h1>
+    <p>
+        Welcome to my scholar webpage.
+
+    </p>
+    <section class="hidden">
+        <h2>Profile</h2>
+        <p>Name: Bingcheng Jin</p>
+        <p>Email: bc.jin137@gmail.com</p>
+        <p>Phone: 086-152-6779-9088</p>
+    </section>
+
+    <section class="hidden">
+        <h2>Education</h2>
+        <p>University: Peking University</p>
+        <p>Major: Physics, Astronomy</p>
+        <p>Year: 2021-2025</p>
+    </section>
+
+    <section class="hidden">
+        <h2>Research</h2>
+        <p>Research Interests: Galaxy Morphology, Galaxy Evolution, AGN physics</p>
+        <p>Publications: <?php echo $_SESSION['publications']; ?></p>
+    </section>
+
+    <section class="hidden">
+        <h2>Color Gradients</h2>
+        <p>"Color Gradients Since the Epoch of Reionization"</p>
+        <p>
+            We study the color gradient in galaxies at 4 < z < 7.5, using the 
+            high-resolution imaging data from the JWST Cosmic Evolution Early Release 
+            Science (CEERS) program. We select a sample of 270 galaxies 
+            with previous multiband measurement including HST. We use GALFITM to 
+            simultaneously fit the light profile of these galaxies for better 
+            characterization of wavelength dependency of structural parameters. 
+            In search of color gradients, we find a neutral distribution of effective 
+            radius and Sérsic index variation, which implies a weak dependency of structural parameters 
+            on wavelength at high redshift, consistent with the latest JWST results.
+            Interestingly, we find that the variation of effective radius has a pronounced 
+            dependency on its sizes: the smallest galaxies tend to establish positive 
+            gradients while the more-assembled ones showcase a trend of negative gradients, 
+            providing a new observational evidence for the inside-out growth scenario.
+            Combining measurement of Sérsic index, a more compact morphology in rest-frame UV 
+            is tentatively discerned for the smallest systems and bluest SEDs.
+        </p>
+    </section>
+
+    <section class="hidden">
+        <h2>Skills</h2>
+        <p>Skills: <?php echo $_SESSION['skills']; ?></p>
+
+    </section>
+
+
+</body>
+
+</html>

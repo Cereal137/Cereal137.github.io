@@ -22,7 +22,7 @@ body {
 
 /* Customize Navigator */
 nav {
-    display: grid;
+    display: flex;
     justify-content: center;
     align-items: center;
     padding: 0;
@@ -46,7 +46,7 @@ ul.navlist {
     overflow: hidden;
 }
 
-@media screen and (max-width: 768px) {
+@media (max-width: 768px) {
     ul.navlist {
         display: flex;
         justify-content: center;
@@ -152,6 +152,18 @@ ul.researchdisplay{
     padding: 0px 10px;
     margin: 0px;
     overflow: hidden;
+}
+
+@media screen and (max-width: 768px) {
+    ul.researchdisplay {
+        display: grid;
+        justify-content: center;
+        width: 80vw;
+        list-style-type: none;
+        padding: 0px 10px;
+        margin: 0px;
+        overflow: hidden;
+    }
 }
 
 ul.researchdisplay li {

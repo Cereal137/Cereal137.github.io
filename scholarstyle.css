@@ -144,7 +144,7 @@ section a {
 ul.researchdisplay{
     display: flex;
     justify-content: center;
-    width: 100%;
+    width: 95%;
     list-style-type: none;
     padding: 0px 10px;
     margin: 0px;

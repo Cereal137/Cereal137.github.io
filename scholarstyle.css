@@ -22,48 +22,34 @@ body {
 
 /* Customize Navigator */
 nav {
-    display: flex;
+    display: grid;
     justify-content: center;
     align-items: center;
-    padding: 0;
+    padding: 0 20%;
     margin-top: 0;
     background-color: rgba(60, 60, 60, 0.3);
     position: sticky;
     top: 0;
     z-index: 1000;
     height: 4em;
-    width: 100%;
 }
 
 ul.navlist {
     display: flex;
     justify-content: center;
     height: 100%;
-    width: 35vw;
+    width: 50vw;
     list-style-type: none;
     padding: 0px 10px;
     margin: 0;
     overflow: hidden;
 }
 
-@media (max-width: 490px) {
-    ul.navlist {
-        display: flex;
-        justify-content: center;
-        height: 100%;
-        width: 80vw;
-        list-style-type: none;
-        padding: 0px 10px;
-        margin: 0;
-        overflow: hidden;
-    }
-}
-
 li {
     float: left;
     padding: 2%;
-    padding-left: 5%;
-    padding-right: 5%;
+    padding-left: 2%;
+    padding-right: 2%;
     margin: auto;
     box-sizing: border-box;
 }
@@ -112,12 +98,25 @@ ul.iconlist {
     overflow: hidden;
 }
 
+.links li {
+    padding: 5% 5%;
+}
+
+.links a {
+    padding: 0;
+}
 
 section {
     display: grid;
     place-items: center;
     align-content: center;
     min-height: 80vh;
+}
+
+section p {
+    text-align: center;
+    margin: 0;
+    width: 100%;
 }
 
 section a {
@@ -154,24 +153,14 @@ ul.researchdisplay{
     overflow: hidden;
 }
 
-@media (max-width: 490px) {
-    ul.researchdisplay {
-        display: grid;
-        justify-content: center;
-        width: 80vw;
-        list-style-type: none;
-        padding: 0px 10px;
-        margin: 0px;
-        overflow: hidden;
-    }
-}
-
 ul.researchdisplay li {
     padding: 10px;
     margin: 20px;
     border-radius: 20px;
+    width: 30%;
     background-color: rgba(60, 60, 60, 0.3);
     display: grid;
+    justify-content: center;
 }
 
 ul.researchdisplay li p {
@@ -189,11 +178,45 @@ ul.researchdisplay li p {
 }
 
 @media (max-width: 490px) {
-    section {
-        display: grid;
-        place-items: center;
-        align-content: center;
-        min-height: 40vh;
-    }
+
+ul.navlist {
+    height: 100%;
+    width: 100%;
+    list-style-type: none;
+    padding: 0px 10px;
+    margin: 0;
+    overflow: hidden;
+}
+
+ul.navlist li a {
+    font-size: .8rem;
+}
+
+section {
+    display: grid;
+    place-items: center;
+    align-content: center;
+    min-height: 40vh;
+    font-size: .6rem;
+}
     
+ul.researchdisplay {
+    display: grid;
+    justify-content: center;
+    width: 80vw;
+    list-style-type: none;
+    padding: 0px 10px;
+    margin: 0px;
+    overflow: hidden;
+}
+
+ul.researchdisplay li {
+    padding: 10px;
+    margin: 20px;
+    border-radius: 20px;
+    width: 90%;
+    background-color: rgba(60, 60, 60, 0.3);
+    display: grid;
+}
+
 }

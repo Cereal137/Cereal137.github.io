@@ -46,7 +46,7 @@ ul.navlist {
     overflow: hidden;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 490px) {
     ul.navlist {
         display: flex;
         justify-content: center;
@@ -154,7 +154,7 @@ ul.researchdisplay{
     overflow: hidden;
 }
 
-@media screen and (max-width: 768px) {
+@media (max-width: 490px) {
     ul.researchdisplay {
         display: grid;
         justify-content: center;
@@ -188,7 +188,7 @@ ul.researchdisplay li p {
     }
 }
 
-@media screen and (max-width: 768px) {
+@media (max-width: 490px) {
     section {
         display: grid;
         place-items: center;

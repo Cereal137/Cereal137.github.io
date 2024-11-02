@@ -46,29 +46,30 @@ ul.navlist {
 }
 
 li {
-    float: left;
-    padding: 2%;
-    margin: auto;
-    box-sizing: border-box;
+    padding: 0;
+    margin: 0 .2em;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    
 }
 
 li a {
-    display: block;
+    display: inline-block;
     text-align: center;
     margin: auto;
     text-decoration: none;
     color: white;
-    font-size: 1.2rem;
     font-weight: 500;
     box-sizing: content-box;
-    padding: 10px 0;
+    padding: .3em .3em;
     width: fit-content;
     height: fit-content;
     border-radius: 10px;
 }
 
-li:hover {
-    background-color: rgba(112, 40, 220, 0.485);
+li a:hover {
+    background-color: rgba(109, 109, 109, 0.485);
     color:azure;
     border-radius: 15px;
 }
@@ -89,7 +90,7 @@ li:hover {
 ul.iconlist {
     display: flex;
     justify-content: center;
-    width: 10vw;
+    width: 10rem;
     list-style-type: none;
     padding: 0px 10px;
     margin: 0px;
@@ -97,10 +98,12 @@ ul.iconlist {
 }
 
 .links li {
-    padding: 5% 5%;
+    padding: 2% 2%;
+    margin: 0 .4rem;
 }
 
 .links a {
+    display: inline-block;
     padding: 0;
 }
 
@@ -108,7 +111,7 @@ section {
     display: grid;
     place-items: center;
     align-content: center;
-    min-height: 80vh;
+    min-height: 100vh;
 }
 
 section p {
@@ -122,6 +125,7 @@ section a {
     color: #95aaed;
 }
 
+/* Customize Javascript Observer */
 .hidden {
     opacity: 0;
     filter: blur(5px);
@@ -133,12 +137,40 @@ section a {
     filter: blur(0);
 }
 
+/*
+nav ul li a .avail {
+    opacity: 1;
+}
+
+nav ul li a .unavail {
+    opacity: .2;
+}
+*/
+
+/* Customize Edu Class */
+ul.edudisplay {
+    display: flex;
+    justify-content: space-between;
+    width: 95%;
+    height: 100%;
+    list-style-type: none;
+    padding: 0px 10px;
+    margin: 0px;
+    overflow: hidden;
+}
+
+.imgani {
+    position: relative;
+    left: -20%;
+}
+
+
+/* Customize Display Class */
 
 .apple {
     border-radius: 150%; 
     width: 160px;
     height: 160px;
-    margin-top: 60px;
 }
 
 ul.researchdisplay{

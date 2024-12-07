@@ -198,6 +198,38 @@ ul.researchdisplay li p {
     margin: auto;
 }
 
+ul.pubdisplay {
+    display: flex;
+    justify-content: center;
+    width: 95%;
+    list-style-type: none;
+    padding: 0px 10px;
+    margin: 0px;
+    overflow: hidden;
+}
+
+ul.pubdisplay li {
+    padding: 10px;
+    margin: 20px;
+    border-radius: 20px;
+    width: 80%;
+    background-color: rgba(60, 60, 60, 0.3);
+    display: grid;
+    justify-content: center;
+}
+
+ul.pubdisplay li button {
+    width: fit-content;
+    background-color: #071954;
+    border-radius: 10px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+    height: 2rem;
+
+}
+
 
 
 

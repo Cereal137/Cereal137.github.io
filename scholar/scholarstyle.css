@@ -150,8 +150,8 @@ nav ul li a .unavail {
 /* Customize Edu Class */
 ul.edudisplay {
     display: flex;
-    justify-content: space-between;
-    width: 95%;
+    justify-content: center;
+    width: 100%;
     height: 100%;
     list-style-type: none;
     padding: 0px 10px;
@@ -159,9 +159,15 @@ ul.edudisplay {
     overflow: hidden;
 }
 
-.imgani {
+
+.imgani_left {
     position: relative;
     left: -20%;
+}
+
+.imgani_right {
+    position: relative;
+    right: -20%;
 }
 
 
